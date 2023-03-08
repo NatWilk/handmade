@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Handmade</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="sidebar">
+            <!-- Header -->
+            <header class="top-bar">
+                <div class="tool-name">
+                    <button class="logo">
+                        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                    </button>
+                    <h2 class="title">Handmade</h2>
+                </div>
+            </header>
+            <!-- Side panel -->
+            <div class="side-panel">
+                <ul class="nav-list">
+                    <li>
+                        <button class="nav-btn">
+                            <i class="fa fa-archive" aria-hidden="true"></i>
+                            <h4 class="title thin">Materiały</h4>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-btn">
+                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                            <h4 class="title thin">Projekty</h4>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Main page -->
+        <main class="main-page">
+            <!-- Header -->
+            <header class="top-bar">
+                <h5 class="title thin">Materiały</h5>
+            </header>
+            <!-- Main content -->
+            <div class="main-content">
+                <!-- Empty page box-->
+                <div class="empty">
+                    <h5 class="title">Nie posiadasz żadnych materiałów</h5>
+                    <p>Zacznij od dodania nowego materiału.</p>
+                    <button class="btn regular-btn">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        Dodaj materiał
+                    </button>
+                </div>
+                <!-- Add material box -->
+                <div class="add-container add-material hide">
+                    <!-- Header -->
+                    <header class="add-header">
+                        <h5 class="title">Dodaj nowy materiał</h5>
+                        <button class="close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <!-- Start material data -->
+                    <div class="material-data">
+                        <div class="data-item">
+                            <h6 class="title">Nazwa</h6>
+                            <form action="" class="material-form">
+                                <input type="text" placeholder="Nazwa materiału">
+                            </form>
+                        </div>
+                        <div class="data-item">
+                            <h6 class="title">Rodzaj</h6>
+                            <form action="" class="material-form">
+                                <input type="text" placeholder="Kolor, marka, tworzywo...">
+                            </form>
+                        </div>
+                        <div class="data-item">
+                            <h6 class="title">Ilość</h6>
+                            <form action="" class="material-form">
+                                <input type="number" placeholder="Podaj liczbę">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End of material data -->
+                    <!-- New category button -->
+                    <button class="btn accept new-category">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        Nowa kategoria
+                    </button>
+                    <!-- Confirmation buttons -->
+                    <div class="confirm-btns">
+                        <button class="btn cancel">Wyjdź</button>
+                        <button class="btn accept">Dodaj</button>
+                    </div>
+                </div>
+                <!-- Regular page -->
+                <!-- Sidebar -->
+                <aside class="materials-sidebar hide">
+                    <ul class="materials-list">
+                        <li>
+                            <button class="btn regular-btn">Tkaniny</button>
+                        </li>
+                        <li>
+                            <button class="btn regular-btn">Filce</button>
+                        </li>
+                        <li>
+                            <button class="btn regular-btn">Tamborki</button>
+                        </li>
+                        <li>
+                            <button class="btn regular-btn">Muliny</button>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- Main section -->
+                <section class="main-section hide">
+                    <div class="table">
+                        <div class="table-bar">
+                            <button class="table-btn">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                                Filtrowanie
+                            </button>
+                            <button class="table-btn">
+                                <i class="fa fa-random" aria-hidden="true"></i>
+                                Sortowanie
+                            </button>
+                            <button class="table-btn">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                Dodaj materiał
+                            </button>
+                        </div>
+                        <table data-type="table">
+                            <thead>
+                                <th></th>
+                                <th>
+                                    <span>Rodzaj</span>
+                                </th>
+                                <th>Ilość</th>
+                                <th>
+                                    <button class="table-btn">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>
+                                        <span>piaskowa</span>
+                                    </td>
+                                    <td>
+                                        <span>3</span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
